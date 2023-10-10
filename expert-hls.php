@@ -9,7 +9,7 @@
 // Enqueue scripts
 function clappr_hls_enqueue_scripts() {
     wp_enqueue_script('clappr', 'https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js', array(), 'latest', true);
-    wp_enqueue_script('clipboard', 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js', array('jquery'), '2.0.8', true);
+    wp_enqueue_script('clipboard', 'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.9/clipboard.min.js', array('jquery'), '2.0.9', true);
     wp_enqueue_script('clappr-hls-player', plugin_dir_url(__FILE__) . 'assets/js/main.js', array('jquery', 'clappr'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'clappr_hls_enqueue_scripts');
@@ -234,10 +234,10 @@ function clappr_hls_player_shortcode($atts) {
                 var player = new Clappr.Player({
                     source: "' . $channel_url . '",
                     parentId: ".clappr-hls-player",
-                    height: "700px",
+                    height: "320px",
                     width: "100%",
                     autoPlay: ' . $autoplay . ',
-                    poster: "https://mytimetv.online/wp-content/uploads/2023/08/Screenshot_1.jpg",
+                    poster: "#",
                 });
             });
         </script>';

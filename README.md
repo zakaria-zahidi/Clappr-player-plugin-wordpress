@@ -7,3 +7,4 @@ Expert Clappr HLS Player. A WordPress plugin for playing HLS streams using Clapp
  * Version: 1.0
  * Author: Md Saiful Islam
  */
+updated by : zakaria zahidi
